@@ -38,8 +38,8 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-adg
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-openclash
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-aliddns
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-filebrowser filebrowser
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-softethervpn softethervpn5
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-softethervpn softethervpn5
 
 # 加入OpenClash核心
 chmod -R a+x $GITHUB_WORKSPACE/preset-clash-core.sh
@@ -96,7 +96,7 @@ CONFIG_PACKAGE_luci-app-pushbot=y
 CONFIG_PACKAGE_luci-app-filebrowser=y
 
 # softehtervpn
-CONFIG_PACKAGE_luci-app-softethervpn=y
+#CONFIG_PACKAGE_luci-app-softethervpn=y
 
 
 " >> .config
