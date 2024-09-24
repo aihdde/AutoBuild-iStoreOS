@@ -39,6 +39,7 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-ope
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-aliddns
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-filebrowser filebrowser
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-softethervpn softethervpn5
 
 # 加入OpenClash核心
 chmod -R a+x $GITHUB_WORKSPACE/preset-clash-core.sh
@@ -70,28 +71,32 @@ CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-adguardhome=y
 
 # mosdns
-#CONFIG_PACKAGE_luci-app-mosdns=y
+CONFIG_PACKAGE_luci-app-mosdns=y
 
 # pushbot
 CONFIG_PACKAGE_luci-app-pushbot=y
 
 # Jellyfin
-CONFIG_PACKAGE_luci-app-jellyfin=y
+#CONFIG_PACKAGE_luci-app-jellyfin=y
 
 # qbittorrent
-CONFIG_PACKAGE_luci-app-qbittorrent=y
+#CONFIG_PACKAGE_luci-app-qbittorrent=y
 
 # transmission
-CONFIG_PACKAGE_luci-app-transmission=y
-CONFIG_PACKAGE_transmission-web-control=y
+#CONFIG_PACKAGE_luci-app-transmission=y
+#CONFIG_PACKAGE_transmission-web-control=y
 
 # uhttpd
 #CONFIG_PACKAGE_luci-app-uhttpd=y
 
 # 阿里DDNS
-CONFIG_PACKAGE_luci-app-aliddns=y
+#CONFIG_PACKAGE_luci-app-aliddns=y
 
 # filebrowser
 CONFIG_PACKAGE_luci-app-filebrowser=y
+
+# softehtervpn
+CONFIG_PACKAGE_luci-app-softethervpn=y
+
 
 " >> .config
