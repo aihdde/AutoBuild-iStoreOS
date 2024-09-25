@@ -96,7 +96,7 @@ CONFIG_PACKAGE_luci-app-pushbot=y
 CONFIG_PACKAGE_luci-app-filebrowser=y
 
 # softehtervpn
-#CONFIG_PACKAGE_luci-app-softethervpn=y
+CONFIG_PACKAGE_luci-app-softethervpn=y
 
 
 " >> .config
